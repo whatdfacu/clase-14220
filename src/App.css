@@ -1,10 +1,14 @@
 .main-nav{
-  list-style: none;
   display:flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 h1{
-  padding: 0px 80px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 p{
   padding: 3rem;
