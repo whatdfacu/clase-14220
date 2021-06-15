@@ -6,7 +6,7 @@ export default class navBar extends Component {
         return (
             <>
             <h1>Design Dimensions</h1>
-            <nav className='nav-principal'>
+            <nav className='container'>
                 <a className='boton' href='.'>Opcion1</a>
                 <a className='boton' href='.'>Opcion2</a>
                 <a className='boton' href='.'>Opcion3</a>

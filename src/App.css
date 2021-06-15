@@ -9,12 +9,22 @@ h1{
   box-shadow:0 0 5px black;
   font-family: sans-serif;
 }
-.nav-principal{
+.container{
   list-style: none;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding: 10px;
+  flex-grow: 2;
+}
+.container2{
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
 }
 .boton{
   list-style: none;
@@ -22,5 +32,10 @@ h1{
   margin: 1rem;
   border-radius: 5px;
   box-shadow:0 0 5px black;
+}
+.cardCentrada{
+  list-style: none;
+  padding: 1px 1rem;
+  margin: 1px;
 }
 
