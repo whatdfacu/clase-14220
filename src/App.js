@@ -8,7 +8,7 @@ class App extends React.Component {
     return(
     <>
       <NavBar/>
-      <ItemListContainer title='Bienvenidos a Design Dimensons!' className='nav-principal'/>
+      <ItemListContainer paragraph1='Bienvenidos a Design Dimensons!' paragraph2='Esto es un texto de prueba en donde puedo escribir lo que se me canta el upite sin h'/>
     </>
     )
   }

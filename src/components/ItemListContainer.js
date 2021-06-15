@@ -3,7 +3,8 @@ import React from 'react'
 function ItemListContainer(props) {
     return (
         <div>
-            <p className='text-center'>{props.title}</p>
+            <p>{props.paragraph1}</p>
+            <p>{props.paragraph2}</p>
         </div>
     )
 }
