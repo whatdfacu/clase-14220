@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import NavBar from './components/NavBar.js'
 import UserCard from './components/UserCard.js'
+import ItemCount from './components/ItemCount.js'
 
-class App extends React.Component {
+class App extends Component {
+
+
   render() {
     return(
     <>
@@ -18,6 +21,7 @@ class App extends React.Component {
           <UserCard photo='https://thispersondoesnotexist.com/image' name='Random' whenJoined='some day' description='Who knows'/>
         </div>
       </div>
+      <ItemCount/>
 
     </>
         )
