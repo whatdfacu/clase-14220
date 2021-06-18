@@ -18,13 +18,13 @@ function ItemCount() {
     return (
 
         <div className='counter-container'>
-          <div className='counter-title'>
-              <p>Items: {number}</p>
-          </div>
-          <div className='counter'>
+        <div className='counter-title'>
+            <p>Items: {number}</p>
+        </div>
+        <div className='counter'>
             <Button onClick={handleUp}positive>+</Button>
             <Button onClick={handleDown}negative>-</Button>
-          </div>
+        </div>
         </div>
 
     )
