@@ -12,6 +12,7 @@ h1{
 .container{
   list-style: none;
   display:flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-direction: row;
