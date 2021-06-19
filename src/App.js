@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar.js'
 import UserCard from './components/UserCard.js'
 import ItemCount from './components/ItemCount.js'
-
+import ItemList from './components/ItemList.js'
 
 class App extends Component {
 
@@ -24,7 +24,8 @@ class App extends Component {
         </div>
       </div>
       <ItemCount/>
-
+      <ItemList/>
+      
     </>
         )
   }

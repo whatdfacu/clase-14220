@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import CartWidget from './CartWidget'
-import ItemList from './ItemList'
 
 export default class navBar extends Component {
     render() {
@@ -15,9 +14,6 @@ export default class navBar extends Component {
                 <a className='boton' href='.'>Opcion4</a>
                 <a className='boton' href='.'>Opcion5</a>
                 <CartWidget/>
-            </nav>
-            <nav className='container'>
-                <ItemList/>
             </nav>
             </>
         )

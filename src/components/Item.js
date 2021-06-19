@@ -4,4 +4,4 @@ export const Item = [
     { id: 3, name: "Pikachu", price: 430 },
     { id: 4, name: "Notebook Foldable Stand", price: 1000 },
     { id: 5, name: "Vase", price: 300 }
-];
+];  
