@@ -21,15 +21,15 @@ function UserCard({ users }) {
                 <span className="date">{user.id}</span>
               </Card.Meta>
               <Card.Description>
-                <Button primary fluid>
                   <a
                     href={user.html_url}
                     target="_blank"
                     rel="noreferrer"
                     style={anchorStyle}>
+                <Button primary fluid>
                     User Profile
-                  </a>
                 </Button>
+                  </a>
               </Card.Description>
             </Card.Content>
           </Card>
