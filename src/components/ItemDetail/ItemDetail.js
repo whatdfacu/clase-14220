@@ -7,23 +7,13 @@ import './ItemDetail.css';
 function ItemDetail() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    axios("https://jsonplaceholder.typicode.com/photos").then((res) => setUsers(res.data));
+    axios('https://api.github.com/users').then((res) => setUsers(res.data));
   }, []);
 
   return (
-    <>
-    <div>
-      <div className="container ItemDetail">
-        <div className="cardCentrada">
-          {users.map((user) => {
-            return <UserCard users={user} key={user.id}/>;
-              }
-            )
-          }
-        </div>
-      </div>
+    <div className='ItemDetail'>
+      <UserCard users={users} />
     </div>
-    </>
   );
 }
 

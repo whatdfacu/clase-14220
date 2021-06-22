@@ -1,17 +1,42 @@
 import React from 'react'
-import { Card, Image } from 'semantic-ui-react'
+import { Button, Card, Image } from 'semantic-ui-react'
+import "./UserCard.css"
 
-const UserCard = ({users}) => (
-  <Card>
-    <Image src={users.url} wrapped ui={false} />
-    <Card.Content>
-      <Card.Header>{}</Card.Header>
-      <Card.Meta>
-        <span className="date">{users.title}</span>
-      </Card.Meta>
-      <Card.Description>{users.body}</Card.Description>
-    </Card.Content>
-  </Card>
-);
+const anchorStyle = {
+  color: 'white',
+  fontSize: 15,
+};
+
+function UserCard({ users }) {
+
+  return (
+    <div className="UserCard">
+      {users.map((user) => {
+        return (
+          <Card key={user.id}>
+            <Image src={user.avatar_url} wrapped ui={false} />
+            <Card.Content>
+              <Card.Header>{user.login}</Card.Header>
+              <Card.Meta>
+                <span className="date">{user.id}</span>
+              </Card.Meta>
+              <Card.Description>
+                <Button primary fluid>
+                  <a
+                    href={user.html_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={anchorStyle}>
+                    User Profile
+                  </a>
+                </Button>
+              </Card.Description>
+            </Card.Content>
+          </Card>
+        );
+      })}
+    </div>
+  );
+}
 
 export default UserCard

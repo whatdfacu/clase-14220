@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "semantic-ui-react";
+import "./ItemCount.css"
 
 /* import { Item } from './Item'; */
 
