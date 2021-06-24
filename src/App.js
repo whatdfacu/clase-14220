@@ -5,7 +5,7 @@ import ItemList from "./components/ItemList/ItemList";
 import ItemCount from "./components/ItemCount/ItemCount";
 import './App.css'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from './views/Category/Category'
+import Category from './views/Category/Category'
 import ItemDetail from "./views/ItemDetail/ItemDetail";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route path='/' exact component={ItemList} />
-          <Route path='/About' component={About} />
+          <Route path='/Category' component={Category} />
           <Route path='/detail/:id' component={ItemDetail} />
         </Switch>
         <ItemCount />

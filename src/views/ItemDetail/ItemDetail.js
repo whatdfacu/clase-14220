@@ -4,9 +4,10 @@ import axios from 'axios';
 import { Card, Image } from 'semantic-ui-react'
 
 function ItemDetail({ match }) {
+
 	let ItemID = match.params.id
 	const [items, setItems] = useState([]);
-	console.log('MATCH', match)
+	
 	useEffect(() => {
 		axios(`https://www.breakingbadapi.com/api/characters/${ItemID}`).then((res) =>
 			setItems(res.data)
