@@ -6,9 +6,7 @@ function NavBar() {
     return (
         <nav>
             <ul className='NavBar'>
-                <Link to='/' className='Link'>Home</Link>
-                <Link to='/About' className='Link'>About</Link>
-                <Link to='/Contact' className='Link'>Contact</Link>
+                <Link to='/About' className='Link'>Category</Link>
             </ul>
         </nav>
     )

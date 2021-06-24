@@ -1,7 +1,7 @@
-.ItemCard {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: end;
-    justify-content: space-around;
-    column-gap: 40px;
+.ItemCard{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
