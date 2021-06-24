@@ -1,11 +1,11 @@
 .Header{
-    margin: 1%;
-    background-color: rgb(95, 117, 131);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    background: #707070;
+    background: linear-gradient(180deg, #a3a3a3 0%, #707070 50%, #a3a3a3 100%);
     padding: 2rem;
-    box-shadow:0 0 5px black;
-    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Imagen{
+    width: 200px;
 }

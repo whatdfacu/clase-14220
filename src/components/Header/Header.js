@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Header.css"
+import { Image } from 'semantic-ui-react'
 
 function Header() {
     return (
-        <div>
-            <h1 className="Header">Design Dimensions</h1>
+        <div className="Header">
+            <Image src={ 'https://practical-booth-a6ed96.netlify.app/images/logo.gif' } alt='Logo de Design Dimensions' className='Imagen'/>
         </div>
     )
 }

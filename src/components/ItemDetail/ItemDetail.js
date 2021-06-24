@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import UserCard from "../UserCard/UserCard";
+import ItemCard from "../ItemCard/IremCard";
 import axios from "axios";
 import './ItemDetail.css';
 
@@ -11,9 +11,11 @@ function ItemDetail() {
   }, []);
 
   return (
+    <>
     <div className='ItemDetail'>
-      <UserCard users={users} />
+      <ItemCard users={users} />
     </div>
+    </>
   );
 }
 

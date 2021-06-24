@@ -1,16 +1,16 @@
 import React from 'react'
 import { Button, Card, Image } from 'semantic-ui-react'
-import "./UserCard.css"
+import "./ItemCard.css"
 
 const anchorStyle = {
   color: 'white',
   fontSize: 15,
 };
 
-function UserCard({ users }) {
+function ItemCard({ users }) {
 
   return (
-    <div className="UserCard">
+    <div className="ItemCard">
       {users.map((user) => {
         return (
           <Card key={user.id}>
@@ -39,4 +39,4 @@ function UserCard({ users }) {
   );
 }
 
-export default UserCard
+export default ItemCard
