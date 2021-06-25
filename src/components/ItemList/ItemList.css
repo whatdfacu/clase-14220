@@ -1,5 +1,36 @@
-.ItemList{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
+@media (min-width: 333px){
+
+    .ItemList{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 630px){
+
+    .ItemList{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 945px){
+
+    .ItemList{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 1260px){
+
+    .ItemList{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+    }
 }
