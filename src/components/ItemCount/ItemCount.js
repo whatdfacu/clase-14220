@@ -1,18 +1,11 @@
-import React, { useState } from "react";
 import { Button } from "semantic-ui-react";
+import { useCartContext } from "../Contexts/CartContext";
 import "./ItemCount.css"
 
 /* import { Item } from './Item'; */
 
-function ItemCount() {
-  const [number, setNumber] = useState(0);
-  const handleUp = () => {
-    setNumber(number + 1);
-  };
-  const handleDown = () => {
-    setNumber(number - 1);
-  };
-
+function ItemCount( {item} ) {
+const { number, handleUp, handleDown, onAdd } = useCartContext()
   return (
     <div className="counter-container">
       <div className="counter-title">
@@ -26,8 +19,14 @@ function ItemCount() {
           -
         </Button>
       </div>
+      <div className="counter">
+        <Button onClick={() => onAdd(item)}>
+          Añadir al Carro
+        </Button>
+      </div>
     </div>
   );
+
 }
 
 export default ItemCount;
