@@ -15,6 +15,7 @@ function ItemDetail({ match }) {
 		);
 	}, [ItemID]);
 
+
 	return (
 		<div>
 			<div className='ItemCard'>

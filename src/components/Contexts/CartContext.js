@@ -24,11 +24,26 @@ export function CartProvider({ children }) {
         console.log(cart)
     }
 
+    const finishPurchase = () => {
+        console.log(`compra terminada`)
+    }
+
+    const cartView = () => {
+        let characterMap = cart.map((char) => {return char.name});
+
+        console.log(characterMap)
+        console.log(characterMap[0])
+        console.log(characterMap[1])
+        console.log(characterMap[2])
+    }
+
     const value = {
+        number,
         handleUp,
         handleDown,
         onAdd,
-        number
+        finishPurchase,
+        cartView
     }
     
     return (
