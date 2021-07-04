@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 /* import { Item } from './Item'; */
 
-function ItemCount( {item} ) {
-const { number, handleUp, handleDown, onAdd, finishPurchase } = useCartContext()
+function ItemCount({ item }) {
+  const { number, handleUp, handleDown, onAdd, finishPurchase } = useCartContext()
   return (
     <div className="counter-container">
       <div className="counter-title">
@@ -15,16 +15,16 @@ const { number, handleUp, handleDown, onAdd, finishPurchase } = useCartContext()
       <div className="counter">
         <Button onClick={handleUp} positive>
           +
-          </Button>
+        </Button>
         <Button onClick={handleDown} negative>
           -
         </Button>
       </div>
       <div className="counter">
-      <Link to='/Cart' className='Link'>
-        <Button onClick={finishPurchase}>
-          Terminar Compra
-        </Button>
+        <Link to='/Cart' className='Link'>
+          <Button onClick={finishPurchase}>
+            Terminar Compra
+          </Button>
         </Link>
         <Button onClick={() => onAdd(item)}>
           Añadir al Carro

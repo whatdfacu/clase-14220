@@ -1,4 +1,6 @@
 import { createContext, useContext, useState } from 'react'
+import ItemCard from '../ItemCard/ItemCard';
+import { Link } from 'react-router-dom'
 
 const CartContext = createContext()
 
@@ -28,22 +30,21 @@ export function CartProvider({ children }) {
         console.log(`compra terminada`)
     }
 
-    const cartView = () => {
-        let characterMap = cart.map((char) => {return char.name});
+    const characterMap = cart.map((char) => {return(    
+        <div key={char.char_id}>
+        <Link to={`/detail/${char.char_id}`}>
+            <ItemCard data={char}/>
+        </Link>
+        </div>
+    )})
 
-        console.log(characterMap)
-        console.log(characterMap[0])
-        console.log(characterMap[1])
-        console.log(characterMap[2])
-    }
-
-    const value = {
+        const value = {
         number,
         handleUp,
         handleDown,
         onAdd,
         finishPurchase,
-        cartView
+        characterMap
     }
     
     return (

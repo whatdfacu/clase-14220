@@ -1,17 +1,16 @@
 import { useCartContext } from "../../components/Contexts/CartContext";
-import { Button } from "semantic-ui-react";
 
 function Cart() {
-    const {cartView} = useCartContext()
+    const {characterMap} = useCartContext()
 
-	return (
+    return (
         <>
-        <div>
-        <Button onClick={cartView}>CONSOLE LOG</Button>
+        <div className='ItemList'>
+        {characterMap}
         </div>
         </>
 
-	);
+    );
 }
 
 export default Cart
