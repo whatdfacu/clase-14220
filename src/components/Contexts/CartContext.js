@@ -25,11 +25,11 @@ export function CartProvider({ children }) {
         setCart([...cart, item])
         console.log(cart)
     }
-
+    
     const finishPurchase = () => {
         console.log(`compra terminada`)
     }
-
+    
     const characterMap = cart.map((char) => {return(    
         <div key={char.char_id}>
         <Link to={`/detail/${char.char_id}`}>
